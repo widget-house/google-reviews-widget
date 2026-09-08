@@ -1,121 +1,75 @@
-# Widget House Google Reviews — website integration guide
+# Widget House Google Reviews — website integration guides
 
-A practical resource for business owners, agencies, and developers adding an existing Widget House Google Reviews widget to a website. Written in American English for projects serving the U.S. market.
+Practical resources for business owners, agencies, and developers adding Google Reviews to a website. These five pages use American English and focus on the needs of U.S. business websites: choosing a useful review format, placing it near a customer decision, and checking the finished integration.
 
-[Read the integration guide](https://widget-house.github.io/google-reviews-widget/) · [Explore the Google Reviews widget](https://widget-house.com/google-reviews) · [Get your installation code](https://widget-house.com/help/getting-started/get-widget-code)
+[Explore the Widget House product](https://widget-house.com/google-reviews) · [Get your installation code](https://widget-house.com/help/getting-started/get-widget-code) · [Visit the Help Center](https://widget-house.com/help/getting-started)
 
-## What this repository provides
+## Explore the website
 
-- A static, accessible integration guide with four authentic template previews.
-- A workflow for obtaining and installing your own generated embed.
-- Practical HTML, React, Next.js, and website-builder considerations.
-- A copyable setup prompt for an AI assistant working on your website.
-- A launch checklist and troubleshooting questions.
-
-This release provides documentation and a reusable setup prompt for an existing Widget House widget; use the complete installation code generated for your own widget.
-
-## Start with your own Widget House widget
-
-1. Open the [Widget House Google Reviews product](https://widget-house.com/google-reviews).
-2. Select the relevant Google Business Profile and choose your layout.
-3. Adjust its appearance and publish the widget.
-4. Open **Install** and copy the generated code, following the [official guide](https://widget-house.com/help/getting-started/get-widget-code).
-5. Add it using your website’s supported embed method.
-6. Check the actual deployed page, including a mobile viewport and navigation away from and back to the page.
-
-| Layout | Suggested place to evaluate it |
+| Resource | What you will find |
 | --- | --- |
-| [Badge](https://widget-house.com/google-reviews/badge?template=badge) | A compact landing page or a section near contact details |
-| [Slider](https://widget-house.com/google-reviews/slider?template=slider) | A focused service page |
-| [Carousel](https://widget-house.com/google-reviews/carousel?template=carousel) | A homepage introduction to customer feedback |
-| [Grid](https://widget-house.com/google-reviews/grid?template=grid) | A dedicated reviews page or substantial review section |
+| [Main integration guide](https://widget-house.github.io/google-reviews-widget/) | Four layout previews, installation workflow, a copyable AI setup prompt, and a launch checklist |
+| [Squarespace guide](https://widget-house.github.io/google-reviews-widget/squarespace-google-reviews.html) | An embed workflow, placement example, platform considerations, and troubleshooting |
+| [WordPress guide](https://widget-house.github.io/google-reviews-widget/wordpress-google-reviews.html) | Editor and embedding considerations, a local practice example, and checks before publishing |
+| [Webflow guide](https://widget-house.github.io/google-reviews-widget/webflow-google-reviews.html) | Code Embed guidance, an agency landing-page example, and published-page checks |
+| [GPT-6 Astra example](https://widget-house.github.io/google-reviews-widget/astra-6-review-demo.html) | An independent AI website-building example with attributed editorial sources and a separate review integration area |
 
-These are editorial placement suggestions. Preview your own content and evaluate the result on your own website. Preview images contain sample content; they are not customer testimonials for this repository or your business.
+The [social sharing image](https://widget-house.github.io/google-reviews-widget/social-preview.png) is a 1200 × 630 PNG with the authentic Widget House logo.
 
-## Use an AI assistant to help with installation
+## What this release does
 
-Provide the assistant with your project, the intended page, and the installation code generated in your Widget House account. Never provide account passwords or private credentials.
+This is a static documentation website with a reusable setup prompt for an existing Widget House widget. It does not ship a native Codex or Claude Code plugin, an MCP server, or a marketplace installation. Use the complete code generated for your own widget.
 
-```text
-Add my existing Widget House Google Reviews widget to this website.
+The pages provide original integration guidance, layout suggestions, source links, and checks that help an implementer make informed choices. Platform guides describe embedding workflows; they do not establish an official partnership, directory listing, or certification.
 
-I will provide the installation code generated in my Widget House account and the page where it should appear.
+## Start with your own widget
 
-Inspect the project first. Follow its framework and script-loading conventions. Preserve the supplied widget ID, URLs, and configuration. Do not invent an embed, reviews, ratings, API, or account connection.
+1. Open the [Google Reviews widget](https://widget-house.com/google-reviews) and select the relevant Google Business Profile.
+2. Choose Badge, Slider, Carousel, or Grid and adjust the appearance.
+3. Publish the widget in Widget House, open **Install**, and copy the generated code.
+4. Follow the guide for your website platform and add the complete snippet using a supported embedding method.
+5. Check the published page on a desktop and a phone, including navigation away from and back to the page.
 
-Use a semantic reviews section that fits the page. Avoid duplicate initialization. For React or Next.js, check client-side loading and behavior after route changes.
+For the account-side steps, use the [official installation-code guide](https://widget-house.com/help/getting-started/get-widget-code). Website editor access, script support, and hosting restrictions depend on the platform and configuration.
 
-Verify mobile layout, script loading, keyboard access, and the visible result. Tell me what you checked and what still needs a live-site test. Ask before publishing changes.
-```
+Choose the layout around the page’s purpose. A Badge is a compact reputation cue; a Slider gives individual feedback a focused space; a Carousel suits a browseable section; a Grid gives reviews a substantial area. These are placement suggestions to evaluate with your own content. The four images in this repository are authentic template previews containing sample content.
 
-The assistant’s ability to edit files, preview the result, or publish a site depends on the tools and permissions available in that environment. This prompt is guidance, not an installed integration or a verified framework adapter.
+## Work with an AI assistant
 
-## Implementation considerations
+Give your assistant the project, intended page, and generated installation code. The [main guide](https://widget-house.github.io/google-reviews-widget/#ai-setup) includes a copy button for this prompt:
 
-### HTML
+> Add my existing Widget House Google Reviews widget to this website. I will provide the installation code and the page where it should appear. Inspect the project first and follow its framework and script-loading conventions. Preserve the supplied widget ID, URLs, and configuration. Do not invent an embed or reviews. Check mobile layout, loading, navigation, and the visible result. Explain what you tested and ask before publishing changes.
 
-Preserve the generated embed and insert it where the widget belongs. Check whether your hosting platform permits any scripts or frames that the generated code uses. A static host can serve this guide; the actual widget remains a Widget House service.
+An assistant needs the relevant project tools and permissions to edit files or preview a website. For React or Next.js, inspect the actual embed before choosing a loading method, then test initial rendering, route changes, and remounting. A raw snippet is not automatically a reusable framework component.
 
-### React and Next.js
+Keep passwords, private credentials, and customer account details out of prompts, public issues, and repository files.
 
-Inspect the actual embed before choosing an implementation. Do not assume that pasting a raw snippet into JSX initializes it correctly. Follow the framework’s supported script-loading method and verify client-side loading, navigation, and remounting. Avoid loading or initializing the same widget twice. This repository intentionally does not guess loader URLs, configuration fields, widget IDs, cleanup APIs, or reinitialization APIs.
+## About the Astra example
 
-### Website builders
+The Astra page separates two kinds of content: attributed developer perspectives about AI-assisted building, and an area reserved for a business review integration. The selected U.S. example source is Teal House Coffee & Bakery in Buda, Texas. Reviews associated with that business are separate from the editorial discussion of Astra.
 
-Verify current plan and platform support for the generated code. An editor may sanitize scripts or behave differently from the published site. Use a supported code or embed area and test the public page.
+The integration area currently explains how to connect a widget; a connected review feed has not been published there. Adapting the example requires your own business source and generated installation code. The page includes no invented testimonials or customer star rating for Astra.
 
-### If a widget is missing
+## Before releasing an integration
 
-- Confirm that the correct widget is published and the complete installation code was saved.
-- Check the live page in addition to the editor preview.
-- Inspect browser errors and hosting restrictions on scripts, frames, and content security policy.
-- Check whether route transitions change initialization behavior in a custom app.
-- Contact the [Widget House Help Center](https://widget-house.com/help/getting-started) if the generated code still fails.
+Confirm the business and location, test long review text on a phone, and check for overflow or duplicate initialization. Inspect the published page as well as the editor preview. Review keyboard access, visible links, and the customer’s next action.
 
-## Before handing a site to a client
+If an embed fails, check whether the full code was saved, whether the widget was published, and whether the platform permits its scripts or frames. A custom application may also need a lifecycle check after navigation. The page should remain useful when an embed cannot load.
 
-Check the connected business and location, long review text on mobile, keyboard navigation, actual script loading, and behavior after route changes. Make sure the page still explains the business and offers a way to contact it when an embed is unavailable. Document account ownership, placement, and the supported way to edit the widget.
+For client handoff, document account ownership, placement, configuration, and the supported editing method.
 
-## Run this documentation site locally
+## Files and local preview
 
-No package installation or build step is required. Serve the files with any local static HTTP server, for example:
+The website has no package installation or build step. Serve this directory with a static HTTP server, for example `python -m http.server 8000`, and open `http://localhost:8000`.
 
-```sh
-python -m http.server 8000
-```
+The main page uses `styles.css` and `script.js`; platform pages also use `guides.css`; the Astra example uses `astra-demo.css`. Brand assets include `logo.svg`, `favicon.svg`, `company-avatar.png`, and the SVG and PNG sharing images.
 
-Then open `http://localhost:8000`. The copy button uses the Clipboard API on supported secure contexts, with a text-selection fallback.
+For GitHub Pages, serve the repository’s root directory. Keep all five HTML pages, styles, images, `.nojekyll`, and `sitemap.xml` together. After changes, verify the public URLs and asset loading.
 
-## Publish with GitHub Pages
+## Search, sources, and feedback
 
-This directory is a complete flat site. Upload its contents to the root of `widget-house/google-reviews-widget`, then configure GitHub Pages to deploy from the `main` branch and `/ (root)`. The intended public address is:
+Pages use descriptive titles, metadata, readable HTML, canonical URLs, and a sitemap. The authored HTML uses normal links without `nofollow` or `sponsored`; GitHub controls links displayed in its own interface. Indexing, rankings, and AI recommendations are not guaranteed.
 
-`https://widget-house.github.io/google-reviews-widget/`
+Product workflow references come from the official Widget House pages linked above. Platform pages link to relevant official documentation, and the Astra page identifies its editorial sources.
 
-The `.nojekyll` file bypasses Jekyll processing. If the repository name, organization, or domain changes, update the canonical URL, Open Graph URL, JSON-LD identifiers, README links, and sitemap together. Publication is complete only when the configured public URL actually serves the site.
-
-The hosted site is developer documentation. Account creation, widget configuration, payment, and service operation remain on Widget House. There is no checkout, sign-in form, backend, analytics, external font dependency, or widget account data in these files.
-
-## Search and sharing
-
-The page uses a unique title and description, semantic HTML, descriptive links, a self-canonical URL, Open Graph metadata, and a single-page sitemap. JSON-LD describes only the organization and this documentation page. There are no review ratings, aggregate ratings, invented authors, or rich-result claims in structured data.
-
-Links in the authored HTML use normal `href` values without `nofollow` or `sponsored`. GitHub controls links rendered in its own repository interface; the authored README cannot override that behavior. These choices do not guarantee indexing, rankings, AI recommendations, referrals, or how any search system treats a link.
-
-## Sources and scope
-
-Product workflow checked against the following official pages on September 8, 2026:
-
-- [Widget House Google Reviews](https://widget-house.com/google-reviews) — product, review source, layout names, customization, and generated installation code.
-- [How to get the widget code](https://widget-house.com/help/getting-started/get-widget-code) — publish, open Install, and copy the widget’s generated code.
-- [Google Reviews Grid](https://widget-house.com/google-reviews/grid?template=grid) — grid layout reference.
-- [Widget House Help Center](https://widget-house.com/help/getting-started) — support documentation entry point.
-- [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) — hosting scope and service restrictions.
-
-Framework notes, placement suggestions, the AI prompt, and launch checks are implementation guidance rather than claims of certified platform compatibility. No API, embed contract, marketplace listing, automatic refresh interval, quantified time saving, pricing, or revenue improvement is asserted by this release.
-
-## Feedback
-
-Use this repository’s Issues for documentation feedback after the repository is published. For account-specific or widget-specific problems, use the [Widget House Help Center](https://widget-house.com/help/getting-started). Keep passwords, private customer information, and account details out of public issues.
-
-Google is a trademark of Google LLC. Widget House is an independent service.
+Use repository Issues for documentation feedback and the [Help Center](https://widget-house.com/help/getting-started) for account-specific assistance. Google is a trademark of Google LLC. Widget House is an independent service.
