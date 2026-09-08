@@ -16,3 +16,5 @@
 .demo-connect a:focus-visible{outline:2px solid #b9ebc6;outline-offset:5px}
 @media(max-width:760px){#astra-widget-mount.demo-connect{padding:33px 28px}.demo-connect h3{font-size:26px}}
 @media(max-width:480px){#astra-widget-mount.demo-connect{padding:29px 23px;min-height:330px}.demo-connect h3{font-size:24px}.demo-connect p{font-size:12px}.demo-connect a{font-size:11px;gap:12px}}
+
+#astra-widget-mount.connected-demo{min-height:160px;padding:0;background:#fff;color:#153e35;border-radius:0 0 14px 14px}.connected-demo #Google-Reviews-Widget{max-width:100%;overflow-wrap:anywhere}

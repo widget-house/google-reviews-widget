@@ -48,7 +48,7 @@ Keep passwords, private credentials, and customer account details out of prompts
 
 The Astra page separates two kinds of content: attributed developer perspectives about AI-assisted building, and an area reserved for a business review integration. The selected U.S. example source is Teal House Coffee & Bakery in Buda, Texas. Reviews associated with that business are separate from the editorial discussion of Astra.
 
-The integration area currently explains how to connect a widget; a connected review feed has not been published there. Adapting the example requires your own business source and generated installation code. The page includes no invented testimonials or customer star rating for Astra.
+The integration area contains the account-generated Widget House embed for Teal House Coffee & Bakery in Buda, Texas. Its Google reviews are not reviews of Astra. Adapting the example requires your own business source and generated installation code; do not reuse this shared demonstration widget in production. The page includes no invented testimonials or customer star rating for Astra.
 
 ## Before releasing an integration
 
