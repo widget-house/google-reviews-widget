@@ -22,7 +22,8 @@ nav a:hover{text-decoration:underline}
 .eyebrow,.section-label,.contents-label{color:#547b5e;font-size:.75rem;font-weight:800;letter-spacing:.12em}
 h1{max-width:860px;margin-top:16px;font-size:clamp(2.3rem,5.3vw,4.5rem);line-height:1.08;letter-spacing:-.045em}
 .lead{max-width:830px;margin-top:26px;color:#35584a;font-size:clamp(1.1rem,2vw,1.3rem);line-height:1.65}
-.download-line{max-width:830px;margin-top:22px;font-weight:600}
+.download-line{max-width:830px;margin-top:22px;padding:16px 20px;border:1px solid #cddfcf;border-radius:10px;background:#f3f8f0;line-height:1.55}
+.download-line a{font-weight:700}
 .scope-note{max-width:830px;margin-top:32px;padding:22px 26px;border-left:4px solid #72a06a;background:var(--soft)}
 .scope-note h2{font-size:1rem}
 .scope-note p{margin-top:5px}
