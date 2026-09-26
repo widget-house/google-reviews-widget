@@ -14,12 +14,15 @@ Practical resources for business owners, agencies, and developers adding Google 
 | [Webflow guide](https://widget-house.github.io/google-reviews-widget/webflow-google-reviews.html) | Code Embed guidance, an agency landing-page example, and published-page checks |
 | [GPT-6 Astra example](https://widget-house.github.io/google-reviews-widget/astra-6-review-demo.html) | An independent AI website-building example with attributed editorial sources and a separate review integration area |
 | [Google Reviews by Widget House plugin guide](https://widget-house.github.io/google-reviews-widget/openai-google-reviews.html) | Existing-user instructions for a published widget's public Install code, HTML/React/Next.js integration, verification, and data handling |
+| [Download the Codex plugin v0.1.1 (full ZIP)](https://github.com/widget-house/google-reviews-widget/releases/download/codex-plugin-v0.1.1/widget-house-google-reviews-0.1.1.zip) | Codex plugin package with a setup skill and connection to the Widget House Google Reviews MCP server |
 
 The [social sharing image](https://widget-house.github.io/google-reviews-widget/social-preview.png) is a 1200 × 630 PNG with the authentic Widget House logo.
 
-## What this release does
+## Documentation and Codex download
 
-This is a static documentation website with a reusable setup prompt for an existing Widget House widget. It does not ship a native Codex or Claude Code plugin, an MCP server, or a marketplace installation. Use the complete code generated for your own widget.
+This repository serves a static documentation website with a reusable setup prompt for an existing Widget House widget. The separate [Codex plugin v0.1.1 full ZIP](https://github.com/widget-house/google-reviews-widget/releases/download/codex-plugin-v0.1.1/widget-house-google-reviews-0.1.1.zip) is available from GitHub Releases. It guides an assistant through using the complete public Install code generated for your own published widget. Downloading the ZIP does not install it automatically or grant access to your website project.
+
+The GitHub release is available to download independently of any OpenAI Plugins Directory review or listing.
 
 The pages provide original integration guidance, layout suggestions, source links, and checks that help an implementer make informed choices. Platform guides describe embedding workflows; they do not establish an official partnership, directory listing, or certification.
 
