@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143e35">
+  <title>Google Reviews by Widget House Plugin: Existing Widget Guide</title>
+  <meta name="description" content="Use the Google Reviews by Widget House plugin with a widget you have already published. Find its public Install code and add it to an HTML, React, or Next.js website.">
+  <link rel="canonical" href="https://widget-house.github.io/google-reviews-widget/openai-google-reviews.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="openai-google-reviews.css">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Widget House">
+  <meta property="og:title" content="Google Reviews by Widget House Plugin: Existing Widget Guide">
+  <meta property="og:description" content="Documentation for adding an already published Widget House Google Reviews widget to an HTML, React, or Next.js website.">
+  <meta property="og:url" content="https://widget-house.github.io/google-reviews-widget/openai-google-reviews.html">
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"TechArticle","headline":"Google Reviews by Widget House Plugin: Existing Widget Guide","url":"https://widget-house.github.io/google-reviews-widget/openai-google-reviews.html","inLanguage":"en-US","publisher":{"@type":"Organization","name":"Widget House","url":"https://widget-house.com/"}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <div class="brand"><img src="logo.svg" width="194" height="32" alt="Widget House"><span>ChatGPT and Codex plugin guide</span></div>
+      <nav aria-label="On this page">
+        <a href="#get-code">Get your code</a>
+        <a href="#frameworks">Frameworks</a>
+        <a href="#verify">Verify</a>
+        <a href="#support">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="page-title">
+      <p class="eyebrow">GOOGLE REVIEWS BY WIDGET HOUSE</p>
+      <h1 id="page-title">Use your published widget on a website.</h1>
+      <p class="lead">This guide is for existing Widget House users who have already published a Google Reviews widget for their business. Give the Google Reviews by Widget House plugin its complete public <strong>Install</strong> code so it can check the supported code structure and prepare an integration for HTML, React, or Next.js.</p>
+      <div class="scope-note" role="note">
+        <h2>Before you begin</h2>
+        <p>You need a published widget for the correct business and location, its public Install code, and access to the website project you want to edit. The plugin does not access your Widget House account or private projects, create or publish a widget, or edit a website by itself.</p>
+      </div>
+    </section>
+
+    <div class="content shell">
+      <aside class="contents" aria-label="Page sections">
+        <p class="contents-label">IN THIS GUIDE</p>
+        <a href="#get-code">Find the Install code</a>
+        <a href="#use-plugin">Use the plugin</a>
+        <a href="#frameworks">HTML, React, and Next.js</a>
+        <a href="#verify">Check the rendered result</a>
+        <a href="#data">Data handling</a>
+        <a href="#support">Help and policies</a>
+      </aside>
+
+      <div class="article">
+        <section id="get-code" aria-labelledby="get-code-title">
+          <p class="section-label">01 / YOUR EXISTING WIDGET</p>
+          <h2 id="get-code-title">Find the public Install code</h2>
+          <ol class="steps">
+            <li><span class="step-number" aria-hidden="true">1</span><div><h3>Open the published widget</h3><p>In your Widget House account, open the Google Reviews widget for the business and location you intend to show. Confirm that it is published.</p></div></li>
+            <li><span class="step-number" aria-hidden="true">2</span><div><h3>Copy the complete code</h3><p>Choose <strong>Install</strong> and copy the entire public installation snippet. Keep its widget ID and loader URL intact. The <a href="https://widget-house.com/help/getting-started/get-widget-code">Widget House code guide</a> shows the account-side steps.</p></div></li>
+          </ol>
+          <p class="info">A business name, Google Maps link, screenshot, or widget preview URL is not a substitute for the Install snippet.</p>
+        </section>
+
+        <section id="use-plugin" aria-labelledby="use-plugin-title">
+          <p class="section-label">02 / WORK WITH YOUR ASSISTANT</p>
+          <h2 id="use-plugin-title">Provide the code and the destination</h2>
+          <p>When using the plugin in ChatGPT or Codex, give your assistant the public Install snippet and identify the website project and page. For example:</p>
+          <blockquote>“Add my published Widget House Google Reviews widget to this website. Use this Install code, place it on the contact page, and check the rendered result on desktop and mobile.”</blockquote>
+          <p>The plugin can check whether the supplied code matches its supported structure and prepare framework-specific integration code. An assistant needs separate access to your website project to place that code and test the page. A structural check does not prove that a widget is live, belongs to a particular business, or displays reviews.</p>
+        </section>
+
+        <section id="frameworks" aria-labelledby="frameworks-title">
+          <p class="section-label">03 / WEBSITE FRAMEWORKS</p>
+          <h2 id="frameworks-title">Fit the integration to your project</h2>
+          <div class="framework-grid">
+            <article><h3>HTML</h3><p>Use the validated Install code in the intended page section. Keep the widget mount and loader together according to your site’s script-loading rules, and avoid loading the same script twice.</p></article>
+            <article><h3>React</h3><p>Use a component that mounts the widget in the browser. Follow the project’s existing loader convention, and check what happens when the component unmounts and returns.</p></article>
+            <article><h3>Next.js</h3><p>Render the widget in a client component after hydration. Check the initial page, a reload, and route navigation. Reuse any loader already present instead of adding a duplicate.</p></article>
+          </div>
+          <p class="info">The supported Install format can change. If your current snippet differs from the plugin’s recognized format, check the <a href="https://widget-house.com/help/getting-started/get-widget-code">current Widget House instructions</a>; do not guess a replacement widget ID or script URL.</p>
+        </section>
+
+        <section id="verify" aria-labelledby="verify-title">
+          <p class="section-label">04 / CHECK THE ACTUAL PAGE</p>
+          <h2 id="verify-title">Confirm what visitors can see</h2>
+          <ul class="check-list">
+            <li>Open the published website page and confirm the correct business and real reviews appear. A successful code check or loaded script alone is not enough.</li>
+            <li>Check the page at desktop and narrow mobile widths. Look for clipped cards, overflow, readable text, attribution, and working links.</li>
+            <li>In React or Next.js, navigate away and back. Confirm that one widget appears without duplicate mounts or loaders.</li>
+            <li>If the widget is blank, confirm that the widget is published, the full code is present, and the site allows the required script and frame. Report any browser error you can observe.</li>
+          </ul>
+        </section>
+
+        <section id="data" aria-labelledby="data-title">
+          <p class="section-label">DATA HANDLING</p>
+          <h2 id="data-title">Share only the public code</h2>
+          <p>When your assistant calls the plugin, the connected tool receives the public Install code and website framework you provide to check the code’s structure and prepare integration code. It does not need your password, session cookie, private API key, or customer account data. Do not include those in the snippet or your prompt.</p>
+          <p>After installation, the widget running on your website contacts Widget House services to display reviews. That browser activity is separate from the plugin’s code check. See the <a href="https://widget-house.com/privacy">Widget House Privacy Policy</a> for the service’s published privacy information.</p>
+        </section>
+
+        <section id="support" aria-labelledby="support-title">
+          <p class="section-label">HELP AND POLICIES</p>
+          <h2 id="support-title">Find the right help</h2>
+          <ul class="resource-list">
+            <li><a href="https://widget-house.com/help/getting-started/get-widget-code">Get your widget code</a> — account-side Install instructions.</li>
+            <li><a href="https://widget-house.com/help/getting-started">Widget House Help Center</a> — product setup and troubleshooting.</li>
+            <li><a href="mailto:support@widget-house.com">support@widget-house.com</a> — contact Widget House support.</li>
+            <li><a href="https://widget-house.com/privacy">Privacy Policy</a> and <a href="https://widget-house.com/terms">Terms of Service</a>.</li>
+          </ul>
+          <p class="affiliation">Widget House is independent of Google and OpenAI. This documentation does not establish availability or approval in any plugin directory.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell"><span>Widget House · Google Reviews integration documentation</span><a href="#main">Back to top ↑</a></div></footer>
+</body>
+</html>

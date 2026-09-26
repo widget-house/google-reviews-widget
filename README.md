@@ -1,6 +1,6 @@
 # Widget House Google Reviews — website integration guides
 
-Practical resources for business owners, agencies, and developers adding Google Reviews to a website. These five pages use American English and focus on the needs of U.S. business websites: choosing a useful review format, placing it near a customer decision, and checking the finished integration.
+Practical resources for business owners, agencies, and developers adding Google Reviews to a website. These six pages use American English and focus on the needs of U.S. business websites: choosing a useful review format, placing it near a customer decision, and checking the finished integration.
 
 [Explore the Widget House product](https://widget-house.com/google-reviews) · [Get your installation code](https://widget-house.com/help/getting-started/get-widget-code) · [Visit the Help Center](https://widget-house.com/help/getting-started)
 
@@ -13,6 +13,7 @@ Practical resources for business owners, agencies, and developers adding Google 
 | [WordPress guide](https://widget-house.github.io/google-reviews-widget/wordpress-google-reviews.html) | Editor and embedding considerations, a local practice example, and checks before publishing |
 | [Webflow guide](https://widget-house.github.io/google-reviews-widget/webflow-google-reviews.html) | Code Embed guidance, an agency landing-page example, and published-page checks |
 | [GPT-6 Astra example](https://widget-house.github.io/google-reviews-widget/astra-6-review-demo.html) | An independent AI website-building example with attributed editorial sources and a separate review integration area |
+| [Google Reviews by Widget House plugin guide](https://widget-house.github.io/google-reviews-widget/openai-google-reviews.html) | Existing-user instructions for a published widget's public Install code, HTML/React/Next.js integration, verification, and data handling |
 
 The [social sharing image](https://widget-house.github.io/google-reviews-widget/social-preview.png) is a 1200 × 630 PNG with the authentic Widget House logo.
 
@@ -64,7 +65,7 @@ The website has no package installation or build step. Serve this directory with
 
 The main page uses `styles.css` and `script.js`; platform pages also use `guides.css`; the Astra example uses `astra-demo.css`. Brand assets include `logo.svg`, `favicon.svg`, `company-avatar.png`, and the SVG and PNG sharing images.
 
-For GitHub Pages, serve the repository’s root directory. Keep all five HTML pages, styles, images, `.nojekyll`, and `sitemap.xml` together. After changes, verify the public URLs and asset loading.
+For GitHub Pages, serve the repository’s root directory. Keep all six HTML pages, styles, images, `.nojekyll`, and `sitemap.xml` together. After changes, verify the public URLs and asset loading.
 
 ## Search, sources, and feedback
 
