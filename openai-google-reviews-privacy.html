@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143e35">
+  <title>Google Reviews Plugin Privacy Notice | Widget House</title>
+  <meta name="description" content="How the Google Reviews by Widget House plugin processes public widget installation code through its ChatGPT and Codex integration.">
+  <link rel="canonical" href="https://widget-house.github.io/google-reviews-widget/openai-google-reviews-privacy.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="openai-google-reviews.css">
+  <style>
+    .privacy-article{max-width:780px;padding:12px 0 80px}
+    .privacy-article section{padding:32px 0;border-bottom:1px solid var(--line)}
+    .privacy-article section:last-child{border-bottom:0}
+    .privacy-article h2{margin-bottom:15px;font-size:clamp(1.45rem,2.5vw,2rem);line-height:1.25;letter-spacing:-.025em}
+    .privacy-article p+p{margin-top:14px}
+    .privacy-article ul{padding-left:24px}
+    .privacy-article li+li{margin-top:10px}
+    .privacy-article .info{margin-top:20px}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <div class="brand"><img src="logo.svg" width="194" height="32" alt="Widget House"><span>Plugin privacy notice</span></div>
+      <nav aria-label="Page navigation">
+        <a href="openai-google-reviews.html">Plugin guide</a>
+        <a href="https://widget-house.com/privacy">Full Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="page-title">
+      <p class="eyebrow">GOOGLE REVIEWS BY WIDGET HOUSE</p>
+      <h1 id="page-title">Plugin privacy notice.</h1>
+      <p class="lead">This notice explains what happens to information sent to the Google Reviews by Widget House MCP tools when you use the integration through ChatGPT or Codex. It supplements the <a href="https://widget-house.com/privacy">Widget House Privacy Policy</a>, which covers accounts, published widgets, visitors to websites using those widgets, and your privacy rights.</p>
+      <p class="info">The plugin is intended for customers with a Google Reviews widget already published for their own business. It needs only the widget's public <strong>Install</strong> code. Do not provide a password, private API key, payment information, or private customer data.</p>
+    </section>
+
+    <div class="shell privacy-article">
+      <section aria-labelledby="received-title">
+        <h2 id="received-title">Information the tools receive</h2>
+        <p>When your assistant calls a plugin tool, OpenAI sends the tool arguments to the Widget House-operated MCP service hosted on Cloudflare Workers:</p>
+        <ul>
+          <li><strong>Find setup instructions:</strong> no tool arguments.</li>
+          <li><strong>Validate installation code:</strong> the text supplied in the installation-code field. A valid code snippet includes a public widget ID and Widget House script URL.</li>
+          <li><strong>Prepare integration code:</strong> the supplied installation code and your selected framework: HTML, React, or Next.js.</li>
+        </ul>
+        <p>If you put other text in the installation-code field, that text is sent to the MCP service for validation too. Cloudflare may also process network and security metadata, such as a connecting IP address, time, requested path, and client details.</p>
+      </section>
+
+      <section aria-labelledby="purpose-title">
+        <h2 id="purpose-title">How the information is used</h2>
+        <p>The tools explain where an existing customer can find the public code for an already published widget, check whether supplied code matches the supported structure, and prepare code for a website project. Results return to OpenAI and can include the public widget ID, script URL, framework choice, generated code, and setup guidance.</p>
+        <p>The MCP tools do not sign in to your Widget House account, read private projects, fetch Google reviews or Google account data, create or publish a widget, edit or deploy a website, or process payments. A structural code check does not establish that a widget is live or belongs to a particular business.</p>
+      </section>
+
+      <section aria-labelledby="recipients-title">
+        <h2 id="recipients-title">Service providers and other recipients</h2>
+        <p>OpenAI provides the ChatGPT or Codex interface, passes the selected tool request to our MCP service, and receives its result. OpenAI handles your conversation under <a href="https://openai.com/policies/privacy-policy/">its Privacy Policy</a>. Cloudflare hosts and routes the MCP service and may process request and security metadata under <a href="https://www.cloudflare.com/privacypolicy/">its Privacy Policy</a>. Widget House does not sell personal information.</p>
+        <p>After you install a widget on a website, that widget's browser requests to Widget House are a separate data flow covered by the <a href="https://widget-house.com/privacy">main Widget House Privacy Policy</a> and, where applicable, the website owner's notice.</p>
+      </section>
+
+      <section aria-labelledby="retention-title">
+        <h2 id="retention-title">Storage and retention</h2>
+        <p>The MCP application processes tool arguments in memory for the request. Its code does not write the installation snippet or tool arguments to an application database, keep them for later application use, or intentionally log request bodies. Tool requests and responses may remain in your OpenAI conversation under OpenAI's controls and retention practices.</p>
+        <p>Cloudflare may separately retain network or security metadata according to its own policies. Widget House's <a href="https://widget-house.com/privacy">main policy</a> says that certain technical data we separately store for diagnostics and security may be kept for up to seven days, with longer retention where needed to investigate security issues, fraud, abuse, technical problems, or legal matters. That period is not a promise about Cloudflare's independently processed records.</p>
+      </section>
+
+      <section aria-labelledby="choices-title">
+        <h2 id="choices-title">Your choices and rights</h2>
+        <ul>
+          <li>You can choose not to call the plugin or provide installation code. Use only the public Install code from a widget published for your own business.</li>
+          <li>For information held in your OpenAI account or conversation, use OpenAI's available account and conversation controls.</li>
+          <li>For access, correction, deletion, or other questions about information held by Widget House, contact us using the email below. We may need to verify your identity, and rights depend on applicable law.</li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Who to contact</h2>
+        <p>Widget House is operated by PE Kiselev I.I. (Kiselev Yaroslav Igorevich), registered in Kyrgyzstan. Email privacy questions to <a href="mailto:support@widget-house.com">support@widget-house.com</a>.</p>
+        <p>For more detail about Widget House accounts, published widgets, installed widget traffic, international transfers, and privacy rights, read the <a href="https://widget-house.com/privacy">full Widget House Privacy Policy</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell"><span>Widget House · Google Reviews plugin privacy notice</span><a href="#main">Back to top ↑</a></div></footer>
+</body>
+</html>
